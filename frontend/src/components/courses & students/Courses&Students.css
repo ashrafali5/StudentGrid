@@ -1,0 +1,119 @@
+:root {
+  --main-primary-color: #191c24;
+  --primary-color: #af1763;
+  --supporting-color1: #198754;
+  --supporting-color2: #ffc107;
+  --supporting-color3: #0d6efd;
+  --supporting-color4: #ab2e3c;
+  --supporting-color5: #ffff;
+}
+
+/* -------------------------Courses & Students-------------------------------- */
+.course-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+  background-color: var(--main-primary-color);
+}
+.course-box {
+  width: 31%;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--supporting-color5);
+}
+.course-box:hover {
+  box-shadow: 5px 5px 10px var(--primary-color);
+  transition: all 0.5s ease;
+}
+.course-thumbnail {
+  width: 100%;
+  height: 20vh;
+  border-radius: 5px;
+}
+.course-title {
+  color: var(--main-primary-color);
+  font-size: 18px;
+  padding: 10px 0px 0px 10px;
+}
+.course-price {
+  font-size: 14px;
+  padding: 10px 0px 10px 10px;
+}
+/* -------------students--------------------- */
+.all-students {
+  background-color: var(--main-primary-color);
+  height: fit-content;
+  padding: 10px;
+}
+.all-students-container {
+  width: 100%;
+  height: 90vh;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--main-primary-color);
+  color: var(--supporting-color5);
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* -------------------------responsive courses----------------------- */
+/* Mobile phones portrait screen */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .course-wrapper {
+    flex-direction: column;
+  }
+  .course-box {
+    width: 100%;
+  }
+  .course-thumbnail {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
+/* mobile landscape screen */
+@media (min-width: 481px) and (max-width: 767px) {
+  .course-box {
+    width: 47.5%;
+  }
+  .course-thumbnail {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+/* Tablets for portrait*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .course-box {
+    width: 31%;
+  }
+  .course-thumbnail {
+    width: 100%;
+    height: 30vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 901px) {
+  .course-box {
+    width: 47.5%;
+  }
+  .course-thumbnail {
+    width: 100%;
+    height: 25vh;
+  }
+}
+
+/* for tablets landscape or for small laptops */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .course-box {
+    width: 31.4%;
+  }
+  .course-thumbnail {
+    width: 100%;
+    height: 25vh;
+  }
+}

@@ -1,0 +1,170 @@
+:root {
+  --main-primary-color: #191c24;
+  --primary-color: #af1763;
+  --supporting-color1: #198754;
+  --supporting-color2: #ffc107;
+  --supporting-color3: #0d6efd;
+  --supporting-color4: #ab2e3c;
+  --supporting-color5: #ffff;
+}
+.student-detail-main-wrapper {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-primary-color);
+}
+.student-detail-wrapper {
+  width: 100%;
+  height: 10vh;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+}
+.student-detail-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.student-detail-heading h1 {
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+.student-detail-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  height: 5vh;
+}
+.primary-btn2 {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 15px 10px 15px;
+  background-color: var(--supporting-color3);
+  color: var(--supporting-color5);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.secondary-btn2 {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  padding: 10px 15px 10px 15px;
+  background-color: var(--supporting-color2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sd-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10%;
+  color: black;
+  margin-top: 25px;
+}
+.sd-detail img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px;
+  cursor: pointer;
+}
+.sd-detail img:hover {
+  box-shadow: 2px 2px 5px var(--primary-color);
+  transition: all 0.5s ease;
+}
+.sd-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--supporting-color5);
+  gap: 15px;
+}
+.sd-data h2 {
+  color: var(--supporting-color3);
+}
+.sd-data p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.fee-detail-wrapper {
+  width: 100%;
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 15px;
+  background-color: var(--supporting-color3);
+  color: white;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+.fee-detail-wrapper h1 {
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+/* ------------------responsive------------------------- */
+
+/* Mobile phones portrait screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .student-detail-heading h1 {
+    font-size: 21px;
+  }
+  .primary-btn2 {
+    font-size: 14px;
+    padding: 8px 12px 8px 12px;
+  }
+  .secondary-btn2 {
+    font-size: 14px;
+    padding: 8px 12px 8px 12px;
+  }
+  .sd-detail {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .sd-detail img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .fee-detail-wrapper h1 {
+    font-size: 21px;
+  }
+}
+/* mobile landscape screen */
+@media (min-width: 481px) and (max-width: 767px) {
+  .student-detail-main-wrapper{
+    height: 150vh;
+  }
+  .student-detail-wrapper{
+    height: 20vh;
+  }
+  .student-detail-heading h1 {
+    font-size: 21px;
+  }
+  .primary-btn2 {
+    font-size: 14px;
+    padding: 6px 10px 6px 10px;
+  }
+  .secondary-btn2 {
+    font-size: 14px;
+    padding: 6px 10px 6px 10px;
+  }
+  .sd-detail {
+    gap: 5vh;
+  }
+  .sd-detail img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .fee-detail-wrapper h1 {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,171 @@
+:root {
+  --main-primary-color: #191c24;
+  --primary-color: #af1763;
+  --supporting-color1: #198754;
+  --supporting-color2: #ffc107;
+  --supporting-color3: #0d6efd;
+  --supporting-color4: #ab2e3c;
+  --supporting-color5: #ffff;
+}
+/* ------------------------------for course--------------------------- */
+.course-detail-main-container {
+  background-color: var(--supporting-color5);
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+.course-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.course-detail-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  text-transform: uppercase;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  height: 5vh;
+}
+.primary-btn {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 15px 10px 15px;
+  background-color: var(--supporting-color3);
+  color: var(--supporting-color5);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.secondary-btn {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  padding: 10px 15px 10px 15px;
+  background-color: var(--supporting-color2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+}
+.text-list h1 {
+  color: var(--supporting-color3);
+}
+.description-container {
+  width: 85%;
+  height: 15vh;
+  overflow: auto;
+  color: rgb(98, 93, 93);
+  text-align: justify;
+  line-height: 1.5;
+}
+.course-detail-wrapper img {
+  width: 35%;
+  border-radius: 5px;
+}
+.course-detail-wrapper img:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+/* --------------------------for student List-------------------------- */
+.studentlist-container {
+  width: 100%;
+  height: 50vh;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--main-primary-color);
+  color: var(--supporting-color5);
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.student-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.student-pic:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+/* -------------------------responsive------------------------- */
+
+/* Mobile phones portrait screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* ---for course--- */
+
+  .course-detail-container {
+    flex-direction: column;
+  }
+  .course-detail-wrapper {
+    flex-direction: column;
+  }
+  .text-list h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .course-detail-wrapper img {
+    width: 100%;
+  }
+  /* -----for student----- */
+  .student-pic {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* mobile landscape screen */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* ---for course--- */
+
+  .course-detail-container {
+    flex-direction: column;
+  }
+  .course-detail-wrapper {
+    flex-direction: column;
+  }
+  .text-list h1 {
+    /* font-size: 24px; */
+    margin-top: 10px;
+  }
+  .course-detail-wrapper img {
+    width: 100%;
+  }
+
+  /* ---student list--- */
+}
+
+/* Tablets for portrait*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* ---for course--- */
+
+  .course-detail-container {
+    flex-direction: column;
+  }
+  .course-detail-wrapper {
+    flex-direction: column;
+  }
+  .text-list h1 {
+    margin-top: 10px;
+  }
+  .course-detail-wrapper img {
+    width: 100%;
+  }
+  /* ---student list--- */
+  .studentlist-container {
+    height: 45vh;
+  }
+}

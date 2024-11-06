@@ -1,0 +1,116 @@
+/* -------------------------Add Courses & Students--------------------------- */
+
+:root {
+  --main-primary-color: #191c24;
+  --primary-color: #af1763;
+  --supporting-color1: #198754;
+  --supporting-color2: #ffc107;
+  --supporting-color3: #0d6efd;
+  --supporting-color4: #ab2e3c;
+  --supporting-color5: #ffff;
+}
+.course-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-primary-color);
+  color: var(--supporting-color5);
+  overflow: hidden;
+  padding: 10px;
+}
+.add-course-form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+  margin-top: 30px;
+}
+.add-course-form h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--supporting-color2);
+  margin-bottom: 20px;
+}
+.add-course-form input {
+  width: 60%;
+  padding: 0.625rem;
+  border: none;
+  outline: none;
+  margin-top: 0.3125rem;
+  font-size: 1.125rem;
+  border-radius: 5px;
+}
+.add-course-form textarea {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 60%;
+  min-width: 60%;
+  max-height: 20vh;
+  min-height: 10vh;
+}
+.add-course-form button {
+  width: 60%;
+  margin-top: 0.3125rem;
+  margin-bottom: 15px;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  padding: 0.625rem;
+  border: none;
+  outline: none;
+  color: var(--supporting-color5);
+  font-weight: 500;
+  background-color: var(--supporting-color3);
+}
+.add-course-form button:hover {
+  background-color: var(--supporting-color2);
+  transition: all 0.5s ease;
+  color: black;
+}
+.add-course-imgUrl {
+  width: 200px;
+  border-radius: 0.3125rem;
+}
+select {
+  width: 60%;
+  padding: 0.625rem;
+  border: none;
+  outline: none;
+  margin-top: 0.3125rem;
+  font-size: 1.125rem;
+  border-radius: 5px;
+}
+#loading2 {
+  font-size: 18px;
+}
+
+/* Mobile phones portrait screen */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .add-course-form input {
+    width: 100%;
+  }
+  .add-course-form select {
+    width: 100%;
+  }
+  .add-course-form h1 {
+    font-size: 28px;
+  }
+  .add-course-form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 15vh;
+    min-height: 5vh;
+  }
+}
+
+/* mobile landscape screen */
+@media (min-width: 481px) and (max-width: 767px) {
+  .add-course-form textarea {
+    max-height: 25vh;
+    min-height: 20vh;
+  }
+}

@@ -1,0 +1,46 @@
+:root {
+  --main-primary-color: #191c24;
+  --primary-color: #af1763;
+  --supporting-color1: #198754;
+  --supporting-color2: #ffc107;
+  --supporting-color3: #0d6efd;
+  --supporting-color4: #ab2e3c;
+  --supporting-color5: #ffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+th {
+  color: var(--supporting-color3);
+}
+tr:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+/* -------------------------responsive------------------------- */
+
+/* Mobile phones portrait screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* ---student list--- */
+  th {
+    display: none;
+  }
+  th,td{
+    padding: 5px;
+  }
+  td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
